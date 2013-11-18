@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Articulos</title>
+</head>
+<body>
+<form method="post" action="index.php">
+Descripcion <input type="text" name="descripcion" value="" size="50" maxlength="70"/><br>
+Precio      <input type="text" name="precio" value="0.00" size="50" maxlength="20"/><br>
+Existencia  <input type="text" name="existencia" value="0" size="5" maxlength="5"/><br>
+Categoria   <select name="categoria">
+              <?php
+                 #Conectar con la base de datos
+                 $conexion=mysql_connect("localhost","root") or die ("Fallo la conexión con la base de datos");
+                  mysql_select_db("store_music");
+                  $categoria="select * from categorias";
+                  $resultcat=mysql_query($categoria,$conexion);	
+                  while ($rcat=mysql_fetch_array($consulta)){
+				  echo "<option value=\"".$rcat["id"].">".$rcat["nombrecat"]."</option>";
+				  
+				  }
+                mysql_close($conexion);
+                ?>
+            </select><br>
+Imagen      <input type="file" name="imagen"/><br>
+            <input type="submit" value="Guardar"/>			
+
+</form>
+</body>
+</html>
