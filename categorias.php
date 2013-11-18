@@ -291,7 +291,7 @@ Imagen        <div class="custom-input-file">
 </center>
 
 <footer>
-  2013. Alls rigtsh Reserve
+  Todos los derechos reservados, Copyrigth 2013, Jorge Flores ITLM Los Mochis,Sinaloa
 </footer>
 
 </body>
