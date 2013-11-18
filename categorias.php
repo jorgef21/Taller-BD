@@ -291,7 +291,7 @@ Imagen        <div class="custom-input-file">
 </center>
 
 <footer>
-  Copyrigth Todos los derechos Reservados,2013 Jorge Flores
+  2013. Alls rigtsh Reserve
 </footer>
 
 </body>
